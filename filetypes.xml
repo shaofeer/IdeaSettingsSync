@@ -3,6 +3,8 @@
     <extensionMap>
       <mapping pattern="*.js.flow" type="Flow" />
       <mapping pattern="*.js.flow" type="Flow" />
+      <mapping pattern="_SUCCESS" type="PLAIN_TEXT" />
+      <mapping ext="parquet" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
