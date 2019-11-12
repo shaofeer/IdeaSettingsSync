@@ -1,8 +1,9 @@
 <application>
   <component name="MaterialThemeConfig">
+    <option name="allowDataCollection" value="true" />
     <option name="isHighContrast" value="true" />
     <option name="isWizardShown" value="true" />
-    <option name="selectedTheme" value="SOLARIZED_LIGHT" />
+    <option name="selectedTheme" value="LIGHTER" />
     <option name="userId" value="591e91c2:16e5d9aa719:-8000" />
     <option name="version" value="4.5.2" />
   </component>
