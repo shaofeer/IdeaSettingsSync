@@ -1,0 +1,8 @@
+<templateSet group="AndroidXML">
+  <template name="&lt;Linearv" value="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;    android:layout_width=&quot;match_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:orientation=&quot;vertical&quot;&gt;&#10; &#10; &lt;LinearLayout&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="&lt;Linearh" value="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&#10;        android:layout_width=&quot;match_parent&quot;&#10;        android:layout_height=&quot;wrap_content&quot;&#10;        android:orientation=&quot;horizontal&quot;&gt;&#10;&#10;&lt;/LinearLayout&gt;" description="" toReformat="false" toShortenFQNames="true" />
+</templateSet>

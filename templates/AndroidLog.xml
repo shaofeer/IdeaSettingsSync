@@ -1,0 +1,14 @@
+<templateSet group="AndroidLog">
+  <template name="Loge" value="android.util.Log.e(&quot;TAG&quot;, &quot;$content$&quot;);" description="生成Log.e日志输出" toReformat="true" toShortenFQNames="true">
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="Logi" value="android.util.Log.i(&quot;TAG&quot;, &quot;$content$&quot;);" description="生成Log.i日志输出" toReformat="true" toShortenFQNames="true">
+    <variable name="content" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

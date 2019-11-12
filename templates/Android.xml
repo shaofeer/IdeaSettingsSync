@@ -1,0 +1,167 @@
+<templateSet group="Android">
+  <template name="fbi" value="$name$ = $cast$findViewById(R.id.$name$);" description="生成findViewById" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <variable name="cast" expression="castToLeftSideType()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="startA" value="android.content.Intent intent = new android.content.Intent($a$this, $c$.class);&#10;startActivity(intent);" description="生成startActivity" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="mm" value="public void $method$(android.view.View v) {&#10;    $a$    &#10;}" description="生成点击回调方法" toReformat="false" toShortenFQNames="true">
+    <variable name="method" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="Toa" value="Toast.makeText($class$.this, &quot;$a$&quot;, Toast.LENGTH_SHORT).show();" description="生成Toast提示" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newDia" value="new android.app.AlertDialog.Builder(this)&#10;            .setTitle($title$)&#10;            .setView($view$)&#10;            .setPositiveButton(&quot;确定&quot;, new DialogInterface.OnClickListener() {&#10;                @Override&#10;                public void onClick(DialogInterface dialog, int which) {&#10;&#10;                }&#10;            })&#10;            .setNegativeButton(&quot;取消&quot;, null)&#10;            .show();" description="生成AlertDialog" toReformat="false" toShortenFQNames="true">
+    <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="view" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="swi" value="switch ($param$) {&#10;    case $value$ :&#10;&#10;        break;&#10;}" description="生成switch语句" toReformat="false" toShortenFQNames="true">
+    <variable name="param" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="fore" value="for ($elementType$ $item$ : $items$) {&#10;    $a$&#10;}" description="生成增强for循环" toReformat="true" toShortenFQNames="true">
+    <variable name="elementType" expression="iterableComponentType(ArrayOrIterable)" defaultValue="" alwaysStopAt="true" />
+    <variable name="item" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="items" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sbc" value="///////////////////////////////////////////////////////////////////////////&#10;// $blockName$&#10;///////////////////////////////////////////////////////////////////////////" description="生成一段注释块" toReformat="true" toShortenFQNames="true">
+    <variable name="blockName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="ViewCon" value="public $class$(android.content.Context context) {&#10;    this(context, null);&#10;}&#10;&#10;public $class$(Context context, android.util.AttributeSet attrs) {&#10;    this(context, attrs, 0);&#10;}&#10;&#10;public $class$(Context context, AttributeSet attrs, int defStyle) {&#10;    super(context, attrs, defStyle);&#10;    $cursor$&#10;}" description="生成自定义View的所有构造方法" toReformat="true" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="const" value="private static final int $name$ = $value$;" description="生成int常量定义" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="NAME" alwaysStopAt="true" />
+    <variable name="value" expression="groovyScript(&quot;new Random().nextInt(1000)&quot;)" defaultValue="0" alwaysStopAt="false" />
+    <context />
+  </template>
+  <template name="visib" value="$VIEW$.setVisibility(View.VISIBLE);" description="设置视图可见" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW" expression="clipboard()" defaultValue="view" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="gone" value="$VIEW$.setVisibility(android.view.View.GONE);" description="设置视图不可见" toReformat="true" toShortenFQNames="true">
+    <variable name="VIEW" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <context />
+  </template>
+  <template name="if" value="if($a$) {&#10;    $b$&#10;}" description="生成if" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="if($a$){&#10;    &#10;} else {&#10;&#10;}" description="生成if..else" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ifee" value="if($a$){&#10;    &#10;} else if($b$){&#10;&#10;}" description="生成if  else if" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="for1" value="for(int $INDEX$ = 0; $INDEX$ &lt; $LIMIT$; $INDEX$++) {&#10;  $END$&#10;}" description="生成一般的int for循环" toReformat="false" toShortenFQNames="true">
+    <variable name="INDEX" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="LIMIT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="for2" value="for($a$) {&#10;  $b$&#10;}" description="生成一般的for循环" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="while" value="while($a$) {&#10;    $b$&#10;}" description="生成while循环" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newHa" value="private android.os.Handler handler = new Handler(){&#10;    public void handleMessage(Message msg){&#10;        &#10;    }&#10;};" description="生成创建Handler的语句" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="case" value="case $value$:&#10;    $a$&#10;    break;" description="生成case语句" toReformat="false" toShortenFQNames="true">
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newThread" value="new Thread(){&#10;    public void run(){&#10;        $a$&#10;    }&#10;}.start();" description="生成创建线程语句" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="newAsyncTask" value="new AsyncTask&lt;Void, Void, Void&gt;(){&#10;&#10;    @Override&#10;    protected void onPreExecute() {&#10;&#10;    }&#10;&#10;    @Override&#10;    protected Void doInBackground(Void... params) {&#10;        return null;&#10;    }&#10;&#10;    @Override&#10;    protected void onPostExecute(Void aVoid) {&#10;&#10;    }&#10;}.execute();" description="创建异步任务启动" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="setoncli" value="$view$.setOnClickListener(new View.OnClickListener() {&#10;    @Override&#10;    public void onClick(View v) {&#10;        $a$&#10;    }&#10;});" description="生成set点击监听" toReformat="false" toShortenFQNames="true">
+    <variable name="view" expression="clipboard()" defaultValue="" alwaysStopAt="false" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logii8" value="Log.e(&quot;$TAG$&quot;, &quot;$className$ $method$()&quot;);" description="生成详细Log" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="TAG" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <variable name="method" expression="methodName()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="shaofei" value="/*&#10;    $date$&#10;    作者：邵飞&#10;    $time$&#10;*/" description="签名" toReformat="false" toShortenFQNames="true">
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="false" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+    </context>
+  </template>
+</templateSet>

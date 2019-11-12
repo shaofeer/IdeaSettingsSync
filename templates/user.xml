@@ -1,0 +1,47 @@
+<templateSet group="user">
+  <template name="newLog" value="private static final Logger logger = LoggerFactory.getLogger($className$.class);&#10;" description="创建logger" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logii" value="logger.info(&quot;$className$  $methodName$()   $a$   &quot; + $c$);" description="java打印logger" toReformat="false" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="methodName()" defaultValue="" alwaysStopAt="true" />
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tryc" value="    try {&#10;        $a$&#10;        &#10;    } catch (Exception e) {&#10;        e.printStackTrace();&#10;        $b$&#10;    }" description="try代码块" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="tryf" value="     try {&#10;            $a$&#10;        } catch (Exception e) {&#10;            e.printStackTrace();&#10;             $b$&#10;        }finally {&#10;            $c$&#10;        }" description="tryfinally" toReformat="false" toShortenFQNames="true">
+    <variable name="a" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="b" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="c" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="cc" value="&#10;/**&#10; * @author: pyfysf&#10; * &lt;p&gt;&#10; * @qq: 337081267&#10; * &lt;p&gt;&#10; * @CSDN: http://blog.csdn.net/pyfysf&#10; * &lt;p&gt;&#10; * @blog: http://wintp.top&#10; * &lt;p&gt;&#10; * @email: pyfysf@163.com&#10; * &lt;p&gt;&#10; * @time: $date$&#10; */" description="create class header" toReformat="false" toShortenFQNames="true">
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="psm" value="public static $returnType$ $methodName$($param$) {&#10;        $methodBody$&#10;&#10;}" description="public static method(生成静态工具方法)" toReformat="false" toShortenFQNames="true">
+    <variable name="returnType" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="param" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodBody" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
