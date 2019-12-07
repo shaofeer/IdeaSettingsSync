@@ -4,7 +4,7 @@
     <property name="created">2019-11-12T11:14:07</property>
     <property name="ide">idea</property>
     <property name="ideVersion">2019.2.4.0.0</property>
-    <property name="modified">2019-11-12T13:44:02</property>
+    <property name="modified">2019-12-08T00:00:23</property>
     <property name="originalScheme">Atom One Dark</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.4" />
@@ -14,7 +14,7 @@
   </font>
   <font>
     <option name="EDITOR_FONT_NAME" value="Fira Code" />
-    <option name="EDITOR_FONT_SIZE" value="14" />
+    <option name="EDITOR_FONT_SIZE" value="16" />
   </font>
   <console-font>
     <option name="EDITOR_FONT_NAME" value="Menlo" />
@@ -174,11 +174,8 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="BASH.FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
-    <option name="BASH.HERE_DOC" baseAttributes="DEFAULT_TEMPLATE_LANGUAGE_COLOR" />
     <option name="BASH.HERE_DOC_END" baseAttributes="DEFAULT_KEYWORD" />
     <option name="BASH.HERE_DOC_START" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="BASH.REDIRECTION" baseAttributes="DEFAULT_OPERATION_SIGN" />
     <option name="BASH.SHEBANG" baseAttributes="BASH.LINE_COMMENT" />
     <option name="BNF_KEYWORD">
       <value>
@@ -996,8 +993,6 @@
         <option name="FOREGROUND" value="9373a5" />
       </value>
     </option>
-    <option name="Implicit conversion" baseAttributes="DEFAULT_IDENTIFIER" />
-    <option name="Interpolated String Injection" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="JAVA.THIS_SUPER">
       <value>
         <option name="FOREGROUND" value="e06c75" />
@@ -2656,15 +2651,13 @@
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
-    <option name="Scala Immutable Collection" baseAttributes="DEFAULT_IDENTIFIER" />
-    <option name="Scala Mutable Collection" baseAttributes="DEFAULT_IDENTIFIER" />
     <option name="Scala Predefined types">
       <value>
         <option name="FOREGROUND" value="a6b2c0" />
       </value>
     </option>
-    <option name="Scala Type Alias" baseAttributes="TYPE_PARAMETER_NAME_ATTRIBUTES" />
-    <option name="Scala Type parameter" baseAttributes="TYPE_PARAMETER_NAME_ATTRIBUTES" />
+    <option name="Scala Type Alias" baseAttributes="" />
+    <option name="Scala Type parameter" baseAttributes="" />
     <option name="Static method access" baseAttributes="STATIC_METHOD_ATTRIBUTES" />
     <option name="Static property reference ID" baseAttributes="STATIC_FINAL_FIELD_ATTRIBUTES" />
     <option name="TAPESTRY_COMPONENT_PARAMATER" baseAttributes="HTML_ATTRIBUTE_NAME" />
